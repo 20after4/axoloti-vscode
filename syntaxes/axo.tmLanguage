@@ -8,37 +8,24 @@
     <array>
       <string>axo</string>
       <string>axp</string>
+      <string>axh</string>
     </array>
     <key>patterns</key>
     <array>
         <dict>
           <key>begin</key>
           <string>&lt;!\[CDATA\[</string>
-          <key>beginCaptures</key>
-          <dict>
-            <key>0</key>
-            <dict>
-              <key>name</key>
-              <string>punctuation.separation.cdata.begin.axoloti</string>
-            </dict>
-          </dict>
           <key>end</key>
           <string>\]\]&gt;</string>
-          <key>endCaptures</key>
-          <dict>
-            <key>0</key>
-            <dict>
-              <key>name</key>
-              <string>punctuation.definition.cdata.end.axoloti</string>
-            </dict>
-          </dict>
           <key>name</key>
-          <string>code.cdata.axoloti</string>
+          <string>meta.cdata.axoloti</string>
+          <key>contentName</key>
+          <string>source.cpp.axoloti</string>
           <key>patterns</key>
           <array>
             <dict>
               <key>include</key>
-              <string>source.c</string>
+              <string>source.cpp</string>
             </dict>
           </array>
         </dict>
@@ -47,7 +34,6 @@
           <string>text.xml</string>
         </dict>
     </array>
-
     <key>scopeName</key>
     <string>text.xml.axoloti</string>
   </dict>

@@ -14,7 +14,7 @@
         "languages": [{
             "id": "axoloti",
             "aliases": ["Axoloti", "axoloti"],
-            "extensions": [".axo",".axp"],
+            "extensions": [".axo", ".axp", ".axh"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
