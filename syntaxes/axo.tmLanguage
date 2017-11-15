@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>name</key>
+    <string>Axoloti</string>
+    <key>fileTypes</key>
+    <array>
+      <string>axo</string>
+      <string>axp</string>
+    </array>
+    <key>patterns</key>
+    <array>
+        <dict>
+          <key>begin</key>
+          <string>&lt;!\[CDATA\[</string>
+          <key>beginCaptures</key>
+          <dict>
+            <key>0</key>
+            <dict>
+              <key>name</key>
+              <string>punctuation.separation.cdata.begin.axoloti</string>
+            </dict>
+          </dict>
+          <key>end</key>
+          <string>\]\]&gt;</string>
+          <key>endCaptures</key>
+          <dict>
+            <key>0</key>
+            <dict>
+              <key>name</key>
+              <string>punctuation.definition.cdata.end.axoloti</string>
+            </dict>
+          </dict>
+          <key>name</key>
+          <string>code.cdata.axoloti</string>
+          <key>patterns</key>
+          <array>
+            <dict>
+              <key>include</key>
+              <string>source.c</string>
+            </dict>
+          </array>
+        </dict>
+        <dict>
+          <key>include</key>
+          <string>text.xml</string>
+        </dict>
+    </array>
+
+    <key>scopeName</key>
+    <string>text.xml.axoloti</string>
+  </dict>
+</plist>

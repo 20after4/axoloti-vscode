@@ -1,0 +1,26 @@
+{
+    "name": "axoloti",
+    "displayName": "axoloti.vscode",
+    "description": "axoloti syntax for vs.code",
+    "version": "0.0.1",
+    "publisher": "20after4",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "axoloti",
+            "aliases": ["Axoloti", "axoloti"],
+            "extensions": [".axo",".axp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "axoloti",
+            "scopeName": "text.xml.axoloti",
+            "path": "./syntaxes/axo.tmLanguage"
+        }]
+    }
+}
